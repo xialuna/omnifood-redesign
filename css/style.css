@@ -1,0 +1,44 @@
+/* 
+01 : TYPOGRAPHY SYSTEM
+ - FONT SIZE (px): 
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ - FONT WEIGHT: 400 / 500 / 600 / 700
+    default: 400
+
+ - LINE HEIGHT:
+    default: 1
+
+02: COLOR 
+  - MAIN: #E67E22
+  - SECONDARY: #FFEA75
+  - TINTS
+  - SHADES
+  - ACCENTS:
+  - GREY:
+      #5C320E
+      #8A4C14
+      #BF8E62
+05: SHADOW
+
+06: BORDER-RADIUS
+
+07: WHITE SPACE
+  - SPACING SYSTEM (px):  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #8a4c14;
+}
