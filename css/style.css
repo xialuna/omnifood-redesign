@@ -18,6 +18,7 @@
   - GREY:
       #5C320E
       #8A4C14
+      #A15818
       #BF8E62
 05: SHADOW
 
@@ -38,7 +39,90 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 400;
   color: #8a4c14;
+}
+
+.hero {
+  max-width: 134rem;
+  height: 574px;
+  margin: 5rem auto;
+  padding: 0 6.1rem;
+  background-color: #ffea75;
+  border-radius: 58px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  position: relative;
+}
+
+.hero-text {
+  width: 60rem;
+}
+
+.hero-heading {
+  color: #5c320e;
+  font-size: 4.8rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
+
+.hero-descrip {
+  width: 52.82rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  /* width: 100%;
+  transform: scale(1.1); */
+  position: absolute;
+  width: 71.9rem;
+  right: 0;
+  top: 50%;
+  transform: translate(4%, -45%);
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 2rem 2.5rem;
+  border-radius: 17px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #cf711f;
+  color: white;
+}
+
+.btn-second:link,
+.btn-second:visited {
+  background-color: #fff9d6;
+  color: #8a4c14;
+}
+
+.btn-second:hover,
+.btn-second:active {
+  background-color: #ffea75;
+  box-shadow: inset 0 0 0 2px #bf8e62;
+  color: #a15818;
+}
+
+.mr-sm {
+  margin-right: 3.6rem;
 }
