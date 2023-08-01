@@ -65,6 +65,7 @@ body {
 .btn-primary:visited {
   background-color: #e67e22;
   color: white;
+  transition: all 0.3s;
 }
 
 .btn-primary:hover,
