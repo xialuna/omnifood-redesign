@@ -1,4 +1,6 @@
+/***************/
 /* NAVIGATION */
+/*************/
 .header {
   display: flex;
   align-items: center;
@@ -49,7 +51,9 @@
   box-shadow: none;
 }
 
+/*****************/
 /* HERO SECTION */
+/***************/
 
 .hero {
   max-width: 130rem;
@@ -130,6 +134,7 @@
   height: 3.6rem;
   border-radius: 50%;
   margin-right: 9px;
+  transition: all 0.3s;
 }
 
 .plus-icon {
@@ -167,4 +172,62 @@
 .meals-delivered span {
   color: #cf711f;
   font-weight: 600;
+}
+
+/*************************/
+/* HOW IT WORKS SECTION */
+/***********************/
+
+.section-app-demo {
+  padding: 9.6rem 0;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.step-num {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #d6b79b;
+  margin-bottom: 1.2rem;
+}
+
+.app-descrip {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.app-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.app-img {
+  width: 40%;
+}
+
+.app-img-box::before {
+  content: "";
+  background-color: #fdf2e9;
+  width: 65%;
+  padding-bottom: 65%;
+  z-index: -2;
+}
+
+.app-img-box::after {
+  content: "";
+  background-color: #f8d8bd;
+  width: 50%;
+  padding-bottom: 50%;
+  z-index: -1;
+}
+
+.app-img-box::before,
+.app-img-box::after {
+  border-radius: 50%;
+  position: absolute;
 }
