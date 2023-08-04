@@ -202,15 +202,6 @@
 /*************************/
 /* HOW IT WORKS SECTION */
 /***********************/
-
-.section-app-demo {
-  padding: 9.6rem 0;
-}
-
-.app-title {
-  text-align: center;
-}
-
 .step-num {
   font-size: 8.6rem;
   font-weight: 700;
@@ -255,4 +246,110 @@
 .app-img-box::after {
   border-radius: 50%;
   position: absolute;
+}
+
+/*************************/
+/* MEALS SECTION */
+/***********************/
+.section-meals {
+  background: linear-gradient(#faecdf 5%, #ffffff 40%);
+}
+
+.meal {
+  background-color: white;
+  border-radius: 37px;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.meal-content {
+  padding: 16.7rem 4.5rem 3.2rem 4.5rem;
+}
+
+.meal-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transform: translate(0, -42%);
+}
+
+.meal-img.ver1 {
+  transform: translate(11%, -42%);
+}
+
+.meal-rate {
+  color: #f6aa1c;
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.3rem;
+}
+
+.meal-star {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.meal-rateNum {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.meal-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #5c320e;
+}
+
+.meal-tags {
+  margin-bottom: 1.9rem;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+}
+
+.tag {
+  display: inline-block;
+  color: #5c320e;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 100px;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal-descrip {
+  font-size: 1.4rem;
+  color: #bf8e62;
+  line-height: 1.7;
+  margin-bottom: 3.2rem;
+}
+
+.meal-icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  color: #e67e22;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
