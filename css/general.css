@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   font-weight: 400;
   color: #8a4c14;
@@ -101,7 +101,6 @@ body {
   font-weight: 600;
   display: inline-block;
   border-radius: 17px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   transition: all 0.3s;
 }
@@ -117,6 +116,7 @@ body {
 .btn-primary:link,
 .btn-primary:visited {
   background-color: #e67e22;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
 }
 
@@ -130,6 +130,7 @@ body {
 .btn-second:link,
 .btn-second:visited {
   background-color: #fff9d6;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   color: #8a4c14;
 }
 
@@ -145,6 +146,7 @@ body {
   font-size: 1.6rem;
   background-color: transparent;
   border: 3px solid currentColor;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   color: #e67e22;
 }
 
@@ -188,10 +190,22 @@ body {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
+.scaleUp {
+  transition: all 0.3s;
+}
+.scaleUp:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
 /* HELPER/SETTINGS CLASSES */
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.7rem !important;
 }
 
 .margin-bottom-md {
@@ -202,6 +216,9 @@ body {
   margin-top: 2.7rem;
 }
 
+.padding-r-l {
+  padding-right: 15.8rem !important;
+}
 .center-text {
   text-align: center;
 }

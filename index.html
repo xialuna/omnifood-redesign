@@ -55,10 +55,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-primary mr-sm pad-l"
-              >Start eating well</a
-            >
-            <a href="#" class="btn btn-second pad-l">Learn more</a>
+            <div class="hero-btn">
+              <a href="#" class="btn btn-primary mr-sm pad-l"
+                >Start eating well</a
+              >
+              <a href="#" class="btn btn-second pad-l">Learn more</a>
+            </div>
           </div>
           <div class="hero-img-box">
             <img
@@ -85,19 +87,7 @@
               </div>
 
               <a href="#" class="rating-btn btn-primary">
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 13 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="plus-icon"
-                >
-                  <path
-                    d="M13 6.5C13 6.70687 12.9178 6.90526 12.7715 7.05154C12.6253 7.19782 12.4269 7.28 12.22 7.28H7.28V12.22C7.28 12.4269 7.19782 12.6253 7.05154 12.7715C6.90526 12.9178 6.70687 13 6.5 13C6.29313 13 6.09473 12.9178 5.94846 12.7715C5.80218 12.6253 5.72 12.4269 5.72 12.22V7.28H0.78C0.573131 7.28 0.374735 7.19782 0.228457 7.05154C0.0821784 6.90526 0 6.70687 0 6.5C0 6.29313 0.0821784 6.09473 0.228457 5.94846C0.374735 5.80218 0.573131 5.72 0.78 5.72H5.72V0.78C5.72 0.573131 5.80218 0.374735 5.94846 0.228457C6.09473 0.0821784 6.29313 0 6.5 0C6.70687 0 6.90526 0.0821784 7.05154 0.228457C7.19782 0.374735 7.28 0.573131 7.28 0.78V5.72H12.22C12.4269 5.72 12.6253 5.80218 12.7715 5.94846C12.9178 6.09473 13 6.29313 13 6.5Z"
-                    fill="white"
-                  />
-                </svg>
+                <ion-icon name="add" class="plus-icon"></ion-icon>
               </a>
 
               <svg
@@ -172,7 +162,7 @@
 
           <div class="app-img-box">
             <img
-              class="app-img slideUp"
+              class="app-img scaleUp"
               src="assets/app/Home.png"
               alt="app demo home page"
             />
@@ -181,7 +171,7 @@
           <!-- APP DEMO 2 -->
           <div class="app-img-box">
             <img
-              class="app-img"
+              class="app-img scaleUp"
               src="assets/app/mealPlan.png"
               alt="app demo home page"
             />
@@ -210,7 +200,7 @@
 
           <div class="app-img-box">
             <img
-              class="app-img"
+              class="app-img scaleUp"
               src="assets/app/Delivery.png"
               alt="app demo home page"
             />
@@ -329,6 +319,141 @@
               >See All Recipes</a
             >
           </div>
+        </div>
+      </section>
+      <!-- TESTIMONIAL AND GALLERY -->
+      <section class="section-testimonials">
+        <div class="testimonial-container">
+          <span class="sub-heading">Testimonials</span>
+          <h2 class="heading-secondary padding-r-l margin-bottom-md">
+            Once you try it, you can't go back
+          </h2>
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img class="margin-bottom-sm" src="assets/icons/quote.svg" />
+              <blockquote class="testimonial-text margin-bottom-md">
+                The AI algorithm is crazy good, it chooses the right meals for
+                me every time. It's amazing not to worry about food anymore!
+                I've been a subscriber for several months now, and I can
+                confidently say that this service has truly transformed my daily
+                eating experience. The sheer convenience of having delicious and
+                personalized meals delivered right to my doorstep has been a
+                game-changer for my busy lifestyle.
+              </blockquote>
+              <div class="testimonial-descrip">
+                <img
+                  class="testimonial-img"
+                  alt="Photo of customer Juan Dela Cruz"
+                  src="assets/customers/juan.jpg"
+                />
+                <div class="customer-descrip">
+                  <div class="rate-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="star-icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <p class="rating-txt testi-rate">5.0</p>
+                  </div>
+                  <p class="testi-name">Juan Dela Cruz</p>
+                  <p class="testi-customer">Customer</p>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-1.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-2.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-3.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-4.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-5.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-6.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-7.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-8.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-9.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-10.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-11.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item border">
+            <img
+              src="assets/gallery/gallery-12.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
         </div>
       </section>
     </main>

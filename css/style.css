@@ -26,7 +26,6 @@
   display: inline-block;
   text-decoration: none;
   color: #5c320e;
-  font-size: 1.8rem;
   font-weight: 500;
   transition: all 0.3s;
 }
@@ -75,6 +74,7 @@
 }
 
 .hero-descrip {
+  font-size: 2rem;
   max-width: 52.82rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
@@ -96,6 +96,10 @@
   transform: translate(17%, -44%);
 }
 
+.hero-btn {
+  display: flex;
+  gap: 3rem;
+}
 .rating-box {
   display: flex;
   align-items: center;
@@ -138,8 +142,8 @@
 }
 
 .plus-icon {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 2.2rem;
+  height: 2.2rem;
   color: white;
 }
 
@@ -150,7 +154,6 @@
 }
 
 .rating-txt {
-  font-size: 1.8rem;
   font-weight: 600;
   color: #cf711f;
 }
@@ -210,7 +213,6 @@
 }
 
 .app-descrip {
-  font-size: 1.8rem;
   line-height: 1.7;
 }
 
@@ -352,4 +354,90 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+/************/
+/* Testimonial and Gallery */
+/**********/
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  align-items: center;
+}
+
+.testimonial-container {
+  padding: 2rem 9.6rem 9.6rem 9.6rem;
+}
+
+.testimonial {
+  width: 100%;
+  max-width: 60rem;
+  background-color: #fff4ea;
+  padding: 2.7rem 5.5rem 4rem 5.5rem;
+  border-radius: 4rem;
+  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  line-height: 1.5;
+  color: #bf8e62;
+}
+
+.testimonial-descrip {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.testimonial-img {
+  width: 7.6rem;
+  border-radius: 50%;
+}
+
+.customer-descrip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.rate-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.testi-rate {
+  color: #f6aa1c;
+}
+
+.testi-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.testi-customer {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #bf8e62;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  background-color: #e67e22;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.border {
+  border: 0.7rem solid white;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+  opacity: 75%;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+  opacity: 100%;
 }
