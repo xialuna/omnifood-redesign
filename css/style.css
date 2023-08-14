@@ -356,9 +356,9 @@
   margin-bottom: 1rem;
 }
 
-/************/
+/****************************/
 /* Testimonial and Gallery */
-/**********/
+/**************************/
 .section-testimonials {
   display: grid;
   grid-template-columns: 60fr 40fr;
@@ -367,6 +367,7 @@
 
 .testimonial-container {
   padding: 2rem 9.6rem 9.6rem 9.6rem;
+  overflow: hidden; /*cr*/
 }
 
 .testimonial {
@@ -376,6 +377,15 @@
   padding: 2.7rem 5.5rem 4rem 5.5rem;
   border-radius: 4rem;
   box-shadow: 0 5px 17px rgba(0, 0, 0, 0.15);
+  margin-right: 13rem; /*cr: gap between testimonials*/
+}
+
+.testimonials {
+  width: 100%; /*all carousel*/
+  padding: 1rem 0 5rem 0;
+  max-width: 900px;
+  position: relative;
+  overflow: hidden;
 }
 
 .testimonial-text {
@@ -417,6 +427,48 @@
   font-weight: 500;
   color: #bf8e62;
 }
+
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #e67e22;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+/*gallery*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

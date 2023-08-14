@@ -10,10 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
 
+    <!-- ICONS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -328,45 +330,128 @@
           <h2 class="heading-secondary padding-r-l margin-bottom-md">
             Once you try it, you can't go back
           </h2>
-          <div class="testimonials">
-            <figure class="testimonial">
-              <img class="margin-bottom-sm" src="assets/icons/quote.svg" />
-              <blockquote class="testimonial-text margin-bottom-md">
-                The AI algorithm is crazy good, it chooses the right meals for
-                me every time. It's amazing not to worry about food anymore!
-                I've been a subscriber for several months now, and I can
-                confidently say that this service has truly transformed my daily
-                eating experience. The sheer convenience of having delicious and
-                personalized meals delivered right to my doorstep has been a
-                game-changer for my busy lifestyle.
-              </blockquote>
-              <div class="testimonial-descrip">
-                <img
-                  class="testimonial-img"
-                  alt="Photo of customer Juan Dela Cruz"
-                  src="assets/customers/juan.jpg"
-                />
-                <div class="customer-descrip">
-                  <div class="rate-container">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="star-icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <p class="rating-txt testi-rate">5.0</p>
+          <div class="testimonials mySwiper">
+            <div class="testimonial-content swiper-wrapper">
+              <figure class="testimonial swiper-slide">
+                <img class="margin-bottom-sm" src="assets/icons/quote.svg" />
+                <blockquote class="testimonial-text margin-bottom-md">
+                  The AI algorithm is crazy good, it chooses the right meals for
+                  me every time. It's amazing not to worry about food anymore!
+                  I've been a subscriber for several months now, and I can
+                  confidently say that this service has truly transformed my
+                  daily eating experience. The sheer convenience of having
+                  delicious and personalized meals delivered right to my
+                  doorstep has been a game-changer for my busy lifestyle.
+                </blockquote>
+                <div class="testimonial-descrip">
+                  <img
+                    class="testimonial-img"
+                    alt="Juan Dela Cruz"
+                    src="assets/customers/juan.jpg"
+                  />
+                  <div class="customer-descrip">
+                    <div class="rate-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="star-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <p class="rating-txt testi-rate">5.0</p>
+                    </div>
+                    <p class="testi-name">Juan Dela Cruz</p>
+                    <p class="testi-customer">Customer</p>
                   </div>
-                  <p class="testi-name">Juan Dela Cruz</p>
-                  <p class="testi-customer">Customer</p>
                 </div>
-              </div>
-            </figure>
+              </figure>
+
+              <figure class="testimonial swiper-slide">
+                <img class="margin-bottom-sm" src="assets/icons/quote.svg" />
+                <blockquote class="testimonial-text margin-bottom-md">
+                  I got Omnifood's monthly family subscription for the whole
+                  family, and it's been a game-changer! Now, we've got more time
+                  on our hands, and the best part is that the food is all
+                  organic, vegan, and no plastic waste. Love it! The best part
+                  is the incredible attention they pay to our dietary
+                  preferences. I find it reassuring to know that what we're
+                  putting on our plates not only tastes great but is also
+                  healthy and nourishing.
+                </blockquote>
+                <div class="testimonial-descrip">
+                  <img
+                    class="testimonial-img"
+                    alt="Hannah Jones"
+                    src="assets/customers/hannah.jpg"
+                  />
+                  <div class="customer-descrip">
+                    <div class="rate-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="star-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <p class="rating-txt testi-rate">5.0</p>
+                    </div>
+                    <p class="testi-name">Hannah Jones</p>
+                    <p class="testi-customer">Customer</p>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="testimonial swiper-slide">
+                <img class="margin-bottom-sm" src="assets/icons/quote.svg" />
+                <blockquote class="testimonial-text margin-bottom-md">
+                  Omnifood has truly been a lifesaver for me! As someone who has
+                  recently launched a new company, my days are jam-packed with
+                  tasks and responsibilities, leaving me with very little time
+                  and energy to devote to cooking. This subscription service has
+                  seamlessly integrated into my hectic routine, providing me
+                  with a consistent source of nourishment that aligns perfectly
+                  with my fast-paced daily routine.
+                </blockquote>
+                <div class="testimonial-descrip">
+                  <img
+                    class="testimonial-img"
+                    alt="David Bryson"
+                    src="assets/customers/dave.jpg"
+                  />
+                  <div class="customer-descrip">
+                    <div class="rate-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="star-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <p class="rating-txt testi-rate">5.0</p>
+                    </div>
+                    <p class="testi-name">David Bryson</p>
+                    <p class="testi-customer">Customer</p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
         <div class="gallery">
@@ -457,5 +542,10 @@
         </div>
       </section>
     </main>
+
+    <!-- SWIPER JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
   </body>
 </html>
