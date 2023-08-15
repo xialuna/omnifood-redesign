@@ -524,17 +524,23 @@
 }
 
 .not-included {
-  color: white;
   width: 3rem;
   height: 3rem;
 }
 
 .preferred-plan {
   transform: scale(1.12);
-  background: linear-gradient(#fdf2e9 40%, white 80%);
+  background: linear-gradient(var(--color3) 40%, var(--color2) 80%);
   border: none;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s, --color3 0.5s, --color2 0.5s;
+}
+
+.preferred-plan:hover {
+  transform: scale(1);
+  --color3: #fff9d6;
+  transition: transform 0.5s;
 }
 
 .preferred-plan::after {

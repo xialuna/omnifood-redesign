@@ -181,23 +181,34 @@ body {
 }
 
 /* ANIMATION & TRANSITION */
+@property --color1 {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+@property --color2 {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+@property --color3 {
+  syntax: "<color>";
+  initial-value: #fdf2e9;
+  inherits: false;
+}
 
 .hoverUp {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border: 1px solid #fdf2e9;
-  transition: all 0.4s;
+  background: linear-gradient(var(--color1), var(--color2));
+  transition: all 0.4s, --color1 0.4s, --color2 0.4s;
 }
 .hoverUp:hover {
-  background-color: #fff9d6;
+  --color1: #fff9d6;
   transform: translateY(-1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-}
-
-.preferred-plan.hoverUp:hover {
-  transform: scale(1);
-  background: none;
-  background-color: #fff9d6;
-  box-shadow: none;
 }
 
 .scaleUp {
