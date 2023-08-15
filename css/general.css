@@ -109,6 +109,10 @@ body {
   padding: 2rem 2.5rem;
 }
 
+.btn.pad-m {
+  padding: 1.7rem 3rem;
+}
+
 .btn.pad-s {
   padding: 1.2rem 3rem;
 }
@@ -165,7 +169,6 @@ body {
 }
 
 .list-item {
-  font-size: 1.8rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -188,6 +191,13 @@ body {
   background-color: #fff9d6;
   transform: translateY(-1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.preferred-plan.hoverUp:hover {
+  transform: scale(1);
+  background: none;
+  background-color: #fff9d6;
+  box-shadow: none;
 }
 
 .scaleUp {
@@ -214,6 +224,14 @@ body {
 
 .margin-top-sm {
   margin-top: 2.7rem;
+}
+
+.margin-top-md {
+  margin-top: 3.1rem;
+}
+
+.margin-top-l {
+  margin-top: 5.4rem;
 }
 
 .padding-r-l {

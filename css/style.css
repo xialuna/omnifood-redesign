@@ -493,3 +493,131 @@
   transform: scale(1.1);
   opacity: 100%;
 }
+/* PRICING */
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9rem;
+  padding: 4.2rem 5.2rem 6.4rem 4.2rem;
+  border: 2px solid #fdf2e9;
+  border-radius: 2.5rem;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 4.2rem;
+}
+
+.plan-price {
+  color: #e67e22;
+  font-size: 4.6rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+
+.plan-descrip {
+  font-size: 1.5rem;
+  color: #bf8e62;
+}
+
+.not-included {
+  color: white;
+  width: 3rem;
+  height: 3rem;
+}
+
+.preferred-plan {
+  transform: scale(1.12);
+  background: linear-gradient(#fdf2e9 40%, white 80%);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.preferred-plan::after {
+  content: "Best value";
+  position: absolute;
+  top: 5%;
+  right: -21%;
+
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #ffea75;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.price-features li {
+  font-size: 1.6rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* PRICING TOGGLE BUTTON */
+.toggle-prices {
+  margin: 2.3rem 0 4.7rem 0;
+}
+
+.toggle-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 22.5rem;
+  background: #efefef;
+  border: 2px solid #efefef;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.toggle-wrapper:before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 12rem;
+  top: -4%;
+  height: 3.5rem;
+  border-radius: 3.3rem;
+  border: 2px solid #efefef;
+  transition: all 150ms ease-in;
+}
+
+.toggle-wrapper p {
+  z-index: 1;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.2rem 2.2rem;
+  font-weight: 500;
+  color: #8a8a8a;
+}
+
+.toggle-wrapper p:first-child {
+  color: #616161;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .toggle-wrapper:before {
+  transform: translateX(80%);
+}
+
+#toggle:checked + .toggle-wrapper p:first-child {
+  color: #8a8a8a;
+}
+
+#toggle:checked + .toggle-wrapper p:last-child {
+  color: #616161;
+}
+
+.toggle-wrapper:hover {
+  cursor: pointer;
+}
