@@ -15,15 +15,20 @@ var swiper = new Swiper(".mySwiper", {
 
 /* PRICING TOGGLE */
 const pricing = document.querySelectorAll(".plan-price");
-const toggleButton = document.querySelector("#toggle");
+const toggleButtons = document.querySelectorAll('input[type="checkbox"]');
 
-function togglePricing() {
-  const prices = toggleButton.checked
-    ? ["$4199", "$6979", "$9959"]
-    : ["$399", "$649", "$1199"];
-  for (let i = 0; i < pricing.length; i++) {
-    pricing[i].textContent = prices[i];
-  }
+function togglePricing(event) {
+  const index = Array.from(toggleButtons).indexOf(event.target);
+  const prices = [
+    ["$399", "$4199"],
+    ["$649", "$6979"],
+    ["$1199", "$9959"],
+  ];
+
+  const priceIndex = event.target.checked ? 1 : 0;
+  pricing[index].textContent = prices[index][priceIndex];
 }
 
-toggleButton.addEventListener("click", togglePricing);
+toggleButtons.forEach((button) => {
+  button.addEventListener("click", togglePricing);
+});
