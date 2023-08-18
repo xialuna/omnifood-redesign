@@ -72,6 +72,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.3rem;
+}
+
 .heading-secondary {
   font-size: 4.4rem;
   font-weight: 700;
