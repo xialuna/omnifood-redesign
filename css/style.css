@@ -625,13 +625,7 @@
 }
 
 /* FEATURES */
-.section-features {
-  position: relative;
-  max-width: 130rem;
-  padding: 0 2rem;
-  margin: 0 auto;
-}
-.section-features::before {
+.container-big::before {
   content: "";
   background-color: #fdf2e9;
   width: 98%;
