@@ -733,7 +733,7 @@
 /*FOOTER*/
 .footer {
   border-top: 1px solid #eee;
-  padding: 7rem 0;
+  padding: 7rem 0 10rem;
   color: #767676;
   font-size: 1.4rem;
   line-height: 1.4;
@@ -800,9 +800,10 @@
 }
 
 .credits {
+  font-size: 1.2rem;
   color: #555555;
   text-align: center;
   letter-spacing: 1px;
   padding: 1.8rem 0;
-  background-color: #fae3d0;
+  background-color: #fdf1e8;
 }
