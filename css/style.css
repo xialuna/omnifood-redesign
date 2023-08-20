@@ -663,7 +663,7 @@
 /* CTA SECTION */
 
 .section-cta {
-  padding: 4.8rem 0 9.8rem;
+  padding: 4rem 0 9.8rem;
 }
 
 .cta-bg {
@@ -796,7 +796,7 @@
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555555;
+  color: #474747;
 }
 
 .credits {
