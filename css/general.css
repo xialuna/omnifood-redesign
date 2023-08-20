@@ -112,7 +112,7 @@ body {
   display: inline-block;
   border-radius: 17px;
 
-  transition: all 0.3s;
+  transition: all 0.3s; /* Put transition on original "state" */
 }
 
 .btn.pad-l {
@@ -169,6 +169,28 @@ body {
   background-color: #e67e22;
   color: white;
   box-shadow: none;
+}
+
+.btn-form {
+  cursor: pointer;
+  background-color: #45260a;
+  color: #fdf2e9;
+  font-family: inherit;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  border: none;
+  margin-top: 2.4rem;
+  border-radius: 8px;
+}
+
+.btn-form:hover {
+  background-color: #fff9d6;
+  color: #8a4c14;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .list {
@@ -236,7 +258,7 @@ body {
 }
 
 .margin-bottom-sm {
-  margin-bottom: 1.7rem !important;
+  margin-bottom: 1.6rem !important;
 }
 
 .margin-bottom-md {

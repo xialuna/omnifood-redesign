@@ -669,8 +669,8 @@
           </aside>
         </div>
       </section>
-      <section class="section-features">
-        <div class="container-big">
+      <section class="section-features container-big">
+        <div class="bg-container">
           <div class="grid grid--2-cols">
             <div class="feature-heading">
               <span class="sub-heading">Features</span>
@@ -721,7 +721,75 @@
           </div>
         </div>
       </section>
-      <section class="section-cta container padding-l"></section>
+      <section class="section-cta">
+        <div class="container padding-l">
+          <div class="cta-bg">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary margin-bottom-sm">
+                Get your first meal for free!
+              </h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form action="#">
+                <div class="cta-form">
+                  <div>
+                    <label for="name">Full Name</label>
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="Juan Dela Cruz"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="email">Email address</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="contact-num">Contact Number</label>
+                    <input
+                      id="contact-num"
+                      type="tel"
+                      placeholder="Enter contact number"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="select-where"
+                      >Where did you here from us?</label
+                    >
+                    <select id="select-where" required>
+                      <option value="">Choose one option</option>
+                      <option value="friends">Friends and family</option>
+                      <option value="podcast">Celebrity</option>
+                      <option value="youtube">Youtube</option>
+                      <option value="ad">Facebook ad</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn pad-s btn-form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Girl happily eating food"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- SWIPER JS-->
