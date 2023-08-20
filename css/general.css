@@ -289,3 +289,7 @@ body {
 .padding-l {
   padding: 9.6rem 0;
 }
+
+.highlight {
+  font-weight: 500;
+}
