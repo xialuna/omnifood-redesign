@@ -1,6 +1,4 @@
-/***************/
 /* NAVIGATION */
-/*************/
 .header {
   display: flex;
   align-items: center;
@@ -9,10 +7,6 @@
   height: 8.3rem;
   background-color: #fff9d6;
   padding: 0 4.5rem;
-}
-
-.company-logo {
-  height: 2.2rem;
 }
 
 .nav-list {
@@ -50,10 +44,7 @@
   box-shadow: none;
 }
 
-/*****************/
 /* HERO SECTION */
-/***************/
-
 .hero {
   max-width: 130rem;
   margin: 3rem auto;
@@ -176,10 +167,7 @@
   color: #cf711f;
   font-weight: 600;
 }
-/*************************/
 /* FEATURED IN SECTION */
-/***********************/
-
 .section-featured {
   padding: 5rem 0 3.2rem 0;
 }
@@ -202,9 +190,7 @@
   height: 3rem;
 }
 
-/*************************/
 /* HOW IT WORKS SECTION */
-/***********************/
 .step-num {
   font-size: 8.6rem;
   font-weight: 700;
@@ -250,9 +236,7 @@
   position: absolute;
 }
 
-/*************************/
 /* MEALS SECTION */
-/***********************/
 .section-meals {
   background: linear-gradient(#faecdf 5%, #ffffff 40%);
 }
@@ -356,9 +340,7 @@
   margin-bottom: 1rem;
 }
 
-/****************************/
 /* Testimonial and Gallery */
-/**************************/
 .section-testimonials {
   display: grid;
   grid-template-columns: 60fr 40fr;
@@ -727,9 +709,9 @@
   width: 100%;
   font-size: 1.7rem;
   font-family: inherit;
+  color: inherit;
   border-radius: 9px;
   border: none;
-  color: inherit;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -746,4 +728,73 @@
     url("../assets/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/*FOOTER*/
+.footer {
+  border-top: 1px solid #eee;
+  padding: 7.1rem 0;
+  color: #767676;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  margin-top: auto;
+}
+
+.social-icon {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #767676;
+}
+
+.footer-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 2.9rem;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  flex-direction: column;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #767676;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555555;
 }
