@@ -53,7 +53,7 @@ body {
 .container {
   /* 1140px */
   max-width: 120rem;
-  padding: 0 3.2rem;
+  padding: 0 3.2rem !important;
   margin: 0 auto;
 }
 .container-big {
@@ -62,7 +62,8 @@ body {
   padding: 0 2rem;
   margin: 0 auto;
 }
-.grid {
+.grid,
+.grid-small {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 15rem;
