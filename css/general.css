@@ -8,6 +8,10 @@
 
  - LINE HEIGHT:
     default: 1
+    Small: 1.05
+    Medium: 1.2
+    Paragraph default: 1.6
+    Large: 1.8
 
 02: COLOR 
   - MAIN: #E67E22
@@ -279,9 +283,6 @@ body {
   margin-top: 5.4rem;
 }
 
-.padding-r-l {
-  padding-right: 15.8rem !important;
-}
 .center-text {
   text-align: center;
 }

@@ -1,0 +1,81 @@
+@media (max-width: 99em) {
+  .section-testimonials {
+    gap: 0;
+  }
+
+  .swiper-button-next {
+    right: 5%;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 90%;
+  }
+}
+
+/* BELOW 1344px (Smaller desktops) */
+@media (max-width: 86em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .hero-img-box {
+    padding: 25.5rem 28rem;
+  }
+
+  .hero-img {
+    width: 65.9rem;
+  }
+
+  .hero-heading {
+    font-size: 4.2rem;
+  }
+
+  .hero-descrip {
+    font-size: 1.8rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .swiper-button-prev {
+    opacity: 100%;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .swiper-button-next {
+    right: 14%;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 100%;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/*01 : TYPOGRAPHY SYSTEM
+ - FONT SIZE (px): 
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ - FONT WEIGHT: 400 / 500 / 600 / 700
+    default: 400
+
+ - LINE HEIGHT:
+    default: 1
+    Small: 1.05
+    Medium: 1.2
+    Paragraph default: 1.6
+    Large: 1.8
+    */

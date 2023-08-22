@@ -6,7 +6,7 @@
 
   height: 8.3rem;
   background-color: #fff9d6;
-  padding: 0 4.5rem;
+  padding: 0 4.8rem;
 }
 
 .nav-list {
@@ -45,6 +45,9 @@
 }
 
 /* HERO SECTION */
+.hero-section {
+  padding: 0 3.2rem;
+}
 .hero {
   max-width: 130rem;
   margin: 3rem auto;
@@ -53,7 +56,7 @@
   border-radius: 58px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 71fr 29fr;
   align-items: center;
 }
 
@@ -72,7 +75,6 @@
 }
 
 .hero-img-box {
-  max-width: 31.5rem;
   padding: 28.5rem 30rem;
   position: relative;
 }
@@ -84,7 +86,8 @@
   width: 71.9rem;
   right: 0;
   top: 50%;
-  transform: translate(17%, -44%);
+  transform: translate(19%, -44%);
+  padding-right: 1.3rem;
 }
 
 .hero-btn {
@@ -345,28 +348,30 @@
   display: grid;
   grid-template-columns: 60fr 40fr;
   align-items: center;
+  gap: 10rem;
+  padding-left: 17rem;
 }
 
 .testimonial-container {
-  padding: 2rem 9.6rem 9.6rem 9.6rem;
+  position: relative;
+  padding: 2rem 0rem 5rem 0;
   overflow: hidden; /*cr*/
 }
 
 .testimonial {
-  width: 100%;
   max-width: 60rem;
   background-color: #fff4ea;
   padding: 2.7rem 5.5rem 4rem 5.5rem;
   border-radius: 4rem;
-  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.15);
-  margin-right: 13rem; /*cr: gap between testimonials*/
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  margin-right: 2.6rem; /*cr: gap between testimonials*/
 }
 
 .testimonials {
-  width: 100%; /*all carousel*/
+  margin-left: 4rem;
+  /*all carousel*/
   padding: 1rem 0 5rem 0;
-  max-width: 900px;
-  position: relative;
+  max-width: 62.3rem;
   overflow: hidden;
 }
 
@@ -427,6 +432,15 @@
   color: white;
   font-weight: 600;
 }
+.swiper-button-next {
+  right: 10%;
+}
+.swiper-button-prev {
+  opacity: 0; /* hide visibility*/
+  pointer-events: none; /* hide from mouse*/
+  visibility: hidden; /* hide from screen readers*/
+  left: 14%;
+}
 
 .swiper-pagination-bullet {
   background-color: rgba(0, 0, 0, 0.8);
@@ -438,16 +452,7 @@
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
-  width: 90%;
-}
-
-@media screen and (max-width: 768px) {
-  .slide p {
-    padding: 0 20px;
-  }
-  .nav-btn {
-    display: none;
-  }
+  width: 75%;
 }
 
 /*gallery*/
