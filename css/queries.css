@@ -68,10 +68,9 @@
 }
 
 /* BELOW 1169px (Landscape Tablets) */
-@media (max-width: 73em) {
+@media (max-width: 74em) {
   html {
-    /* 9px / 16px  */
-    font-size: 56.25%;
+    font-size: 56.25%; /* 9px / 16px  */
   }
 
   .grid {
@@ -117,6 +116,96 @@
 
   .feature {
     padding: 3.8rem 2.5rem;
+  }
+}
+
+/* BELOW 997px (Tablets) */
+@media (max-width: 62em) {
+  html {
+    font-size: 50%; /* 8px / 16px = 0.5 = 50% */
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    margin: 18rem 4rem 7rem 4rem;
+  }
+
+  .hero-img-box {
+    grid-row: 1;
+    width: 100%;
+    padding: 24% 0;
+  }
+
+  .hero-img {
+    width: 65%;
+    top: 0;
+    right: 13%;
+    transform: translateY(-28%);
+  }
+
+  .hero-text {
+    margin: 0 7rem;
+    text-align: center;
+  }
+
+  .rating-box {
+    bottom: 35%;
+    left: 16%;
+    transform: translate(0, 0);
+  }
+
+  .meals-delivered {
+    margin-top: 8rem;
+    justify-self: center;
+  }
+
+  .featured-logos img {
+    height: 2.4rem;
+  }
+
+  .step-num {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 16.7rem 3.5rem 3.2rem 3.5rem;
+  }
+
+  .cta-bg {
+    grid-template-columns: 3fr 2fr; /* 3/5 = 60% + 2/5 = 40% */
+  }
+}
+
+/* For Pricing */
+@media (max-width: 56.2em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-img {
+    width: 75%;
+    transform: translate(45px, -44%);
+  }
+
+  .meal-img.ver1 {
+    transform: translate(25%, -44%);
+  }
+
+  .meal {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 3.2rem;
   }
 }
 

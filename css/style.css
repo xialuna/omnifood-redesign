@@ -33,8 +33,8 @@
 .nav-link.nav-cta:visited {
   background-color: #e67e22;
   color: white;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.9rem;
   padding: 1.2rem 2.4rem;
 }
 
@@ -42,6 +42,24 @@
 .nav-link.nav-cta:active {
   background-color: #cf711f;
   box-shadow: none;
+}
+/* MOBILE NAVIGATION*/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav [name="menu-outline"] {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #e67e22;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* HERO SECTION */
@@ -53,7 +71,7 @@
   margin: 3rem auto;
   padding: 0 6.1rem;
   background-color: #ffea75;
-  border-radius: 58px;
+  border-radius: 5.8rem;
 
   display: grid;
   grid-template-columns: 71fr 29fr;
@@ -68,8 +86,8 @@
 }
 
 .hero-descrip {
+  padding-right: 1rem;
   font-size: 2rem;
-  max-width: 52.82rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
@@ -90,20 +108,16 @@
   padding-right: 1.3rem;
 }
 
-.hero-btn {
-  display: flex;
-  gap: 3rem;
-}
 .rating-box {
   display: flex;
   align-items: center;
   justify-content: center;
   /* width: 21.9rem;
   height: 6.6rem; */
-  padding: 9px 23px 9px 11px;
+  padding: 0.9rem 2.3rem 0.9rem 1.1rem;
   background-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 33px;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 3.3rem;
 
   position: absolute;
   bottom: 0;
@@ -161,7 +175,7 @@
 
 .meals-delivered p {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #a15818;
 }
@@ -178,7 +192,7 @@
 .featured-heading {
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: #bf8e62;
   text-transform: uppercase;
   text-align: center;
@@ -246,13 +260,13 @@
 
 .meal {
   background-color: white;
-  border-radius: 37px;
+  border-radius: 3.7rem;
   position: relative;
   margin-top: 4rem;
 }
 
 .meal-content {
-  padding: 16.7rem 4.5rem 3.2rem 4.5rem;
+  padding: 16.7rem 4.2rem 3.2rem 4.2rem;
 }
 
 .meal-img {
@@ -304,7 +318,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 
 .tag--vegetarian {
@@ -363,7 +377,7 @@
   background-color: #fff4ea;
   padding: 2.7rem 5.5rem 4rem 5.5rem;
   border-radius: 4rem;
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.15);
   margin-right: 2.6rem; /*cr: gap between testimonials*/
 }
 
@@ -487,9 +501,9 @@
   align-items: center;
   margin-bottom: 9rem;
   padding: 4.2rem 5.2rem 6.4rem 4.2rem;
-  border: 2px solid #fdf2e9;
+  border: 0.2rem solid #fdf2e9;
   border-radius: 2.5rem;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.6rem 0.8rem rgba(0, 0, 0, 0.1) !important;
 }
 
 .plan-name {
@@ -564,8 +578,8 @@
   grid-template-columns: repeat(2, 1fr);
   width: 22.5rem;
   background: #efefef;
-  border: 2px solid #efefef;
-  border-radius: 50px;
+  border: 0.2rem solid #efefef;
+  border-radius: 5rem;
   margin: 0 auto;
 }
 
@@ -577,7 +591,7 @@
   top: -4%;
   height: 3.5rem;
   border-radius: 3.3rem;
-  border: 2px solid #efefef;
+  border: 0.2rem solid #efefef;
   transition: all 150ms ease-in;
 }
 
@@ -676,7 +690,7 @@
   grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  border-radius: 11px;
+  border-radius: 1.1rem;
   overflow: hidden;
 }
 
@@ -715,9 +729,9 @@
   font-size: 1.7rem;
   font-family: inherit;
   color: inherit;
-  border-radius: 9px;
+  border-radius: 0.9rem;
   border: none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .cta-form input::placeholder {
@@ -737,7 +751,7 @@
 
 /*FOOTER*/
 .footer {
-  border-top: 1px solid #eee;
+  border-top: 0.1rem solid #eee;
   padding: 7rem 0 10rem;
   color: #767676;
   font-size: 1.4rem;
