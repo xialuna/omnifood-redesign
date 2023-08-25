@@ -7,9 +7,9 @@
     right: 5%;
   }
 
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .swiper-horizontal > .swiper-pagination-bullets {
     width: 90%;
+    bottom: -1%;
   }
 }
 
@@ -57,8 +57,7 @@
     right: 14%;
   }
 
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .swiper-horizontal > .swiper-pagination-bullets {
     width: 100%;
     padding-bottom: 6rem;
   }
@@ -125,11 +124,6 @@
     font-size: 50%; /* 8px / 16px = 0.5 = 50% */
   }
 
-  .logo-col,
-  .address-col {
-    grid-column: span 3;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     margin: 18rem 4rem 7rem 4rem;
@@ -181,8 +175,12 @@
   }
 }
 
-/* For Pricing */
-@media (max-width: 56.2em) {
+@media (max-width: 53em) {
+  /* BELOW 848px */
+  .grid {
+    row-gap: 7rem;
+  }
+
   .grid--3-cols {
     grid-template-columns: 1fr;
   }
@@ -196,16 +194,96 @@
     transform: translate(25%, -44%);
   }
 
-  .meal {
+  .meal,
+  .diets {
     grid-column: 1 / -1;
     justify-self: center;
   }
+
+  .diets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diets a {
+    margin-top: 5rem;
+  }
+
+  .meal:nth-child(2) {
+    margin-top: 10rem;
+  }
+
+  .pricing-plan {
+    margin: 0 16rem;
+  }
+
+  .preferred-plan {
+    transform: scale(1);
+  }
+
   .cta-form {
     grid-template-columns: 1fr;
   }
 
   .btn-form {
     margin-top: 3.2rem;
+  }
+
+  .swiper-button-next {
+    right: 7%;
+  }
+  .swiper-button-prev {
+    left: 10%;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* HIDE */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
   }
 }
 
