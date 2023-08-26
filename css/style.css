@@ -108,6 +108,12 @@
   padding-right: 1.3rem;
 }
 
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
 .rating-box {
   display: flex;
   align-items: center;

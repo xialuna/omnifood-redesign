@@ -147,6 +147,10 @@
     text-align: center;
   }
 
+  .hero-btn {
+    justify-content: center;
+  }
+
   .rating-box {
     bottom: 26%;
     left: 52%;
@@ -212,6 +216,10 @@
 
   .meal:nth-child(2) {
     margin-top: 10rem;
+  }
+
+  .section-price > .container h2 {
+    margin-bottom: 6rem;
   }
 
   .pricing-plan {
@@ -354,8 +362,19 @@
     padding: 25% 0;
   }
 
+  .hero-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .rating-box {
     bottom: 12%;
+  }
+
+  .meals-delivered {
+    margin-top: 1.2rem;
   }
 
   .featured-logos img {
@@ -378,9 +397,22 @@
     text-align: center;
   }
 
+  .testimonials {
+    max-width: 58.7rem;
+  }
+
   .testimonial {
     max-width: 44.3rem;
     margin-right: 20.1rem;
+  }
+
+  .testimonial:nth-child(2),
+  .testimonial:nth-child(3) {
+    margin-right: 14rem;
+  }
+
+  .testimonial:nth-child(4) {
+    margin-right: 14.8rem;
   }
 
   .testimonial-descrip {
