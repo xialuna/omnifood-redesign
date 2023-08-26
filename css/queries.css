@@ -148,8 +148,8 @@
   }
 
   .rating-box {
-    bottom: 35%;
-    left: 16%;
+    bottom: 26%;
+    left: 52%;
     transform: translate(0, 0);
   }
 
@@ -289,6 +289,21 @@
 
 /* BELOW 704px (Smaller tablets) */
 @media (max-width: 44em) {
+  .hero {
+    margin: 20rem 0 7rem 0;
+    padding: 0 2rem;
+  }
+
+  .hero-img {
+    width: 70%;
+    right: 11%;
+  }
+
+  .hero-text {
+    margin: 4rem 0;
+    text-align: center;
+  }
+
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 0;
@@ -317,17 +332,3 @@
     display: none;
   }
 }
-/*01 : TYPOGRAPHY SYSTEM
- - FONT SIZE (px): 
-    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
- - FONT WEIGHT: 400 / 500 / 600 / 700
-    default: 400
-
- - LINE HEIGHT:
-    default: 1
-    Small: 1.05
-    Medium: 1.2
-    Paragraph default: 1.6
-    Large: 1.8
-    */
