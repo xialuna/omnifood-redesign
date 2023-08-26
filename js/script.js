@@ -1,3 +1,12 @@
+/* MOBILE NAVIGATION */
+
+const navBtnEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+navBtnEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open"); //Add or remove at the same time (toggle)
+});
+
 /* CAROUSEL */
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -32,3 +41,8 @@ function togglePricing(event) {
 toggleButtons.forEach((button) => {
   button.addEventListener("click", togglePricing);
 });
+
+/* UPDATE YEAR IN FOOTER */
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
