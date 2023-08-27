@@ -271,7 +271,7 @@
   }
 
   .nav-open .main-nav {
-    z-index: 5; /* Place it on top of the absolute position items*/
+    z-index: 8888; /* Place it on top of the absolute position items*/
     opacity: 1;
     pointer-events: auto;
     visibility: visible;

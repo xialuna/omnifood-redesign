@@ -33,6 +33,30 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+/* ADD STICKY NAVIGATION */
+const heroSectionEl = document.querySelector(".hero-section");
+const observe = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+
+    if (!entry.isIntersecting) {
+      document.body.classList.add("sticky");
+    }
+
+    if (entry.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-115px",
+  }
+);
+
+observe.observe(heroSectionEl);
+
 /* CAROUSEL */
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
