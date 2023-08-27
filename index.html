@@ -37,11 +37,11 @@
       </a>
       <nav class="main-nav">
         <ul class="nav-list">
-          <li><a href="#" class="nav-link">How it works</a></li>
-          <li><a href="#" class="nav-link">Meals</a></li>
-          <li><a href="#" class="nav-link">Testimonials</a></li>
-          <li><a href="#" class="nav-link">Pricing</a></li>
-          <li><a href="#" class="nav-link nav-cta">Try for Free</a></li>
+          <li><a href="#how" class="nav-link">How it works</a></li>
+          <li><a href="#meals" class="nav-link">Meals</a></li>
+          <li><a href="#testi" class="nav-link">Testimonials</a></li>
+          <li><a href="#price" class="nav-link">Pricing</a></li>
+          <li><a href="#cta" class="nav-link nav-cta">Try for Free</a></li>
         </ul>
       </nav>
 
@@ -64,8 +64,8 @@
               nutritional needs.
             </p>
             <div class="hero-btn">
-              <a href="#" class="btn btn-primary pad-l">Start eating well</a>
-              <a href="#" class="btn btn-second pad-l">Learn more</a>
+              <a href="#cta" class="btn btn-primary pad-l">Start eating well</a>
+              <a href="#how" class="btn btn-second pad-l">Learn more</a>
             </div>
           </div>
           <div class="hero-img-box">
@@ -143,7 +143,7 @@
       </section>
 
       <!-- HOW IT WORKS SECTION -->
-      <section class="section-app-demo padding-l">
+      <section class="section-app-demo padding-l" id="how">
         <div class="container center-text">
           <span class="sub-heading">How It Works</span>
           <h2 class="heading-secondary">
@@ -215,7 +215,7 @@
       </section>
 
       <!-- MEALS SECTION -->
-      <section class="section-meals padding-l">
+      <section class="section-meals padding-l" id="meals">
         <div class="container center-text">
           <span class="sub-heading">Meals</span>
           <h2 class="heading-secondary">
@@ -328,7 +328,7 @@
         </div>
       </section>
       <!-- TESTIMONIAL AND GALLERY -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testi">
         <div class="testimonial-container">
           <span class="sub-heading">Testimonials</span>
           <h2 class="heading-secondary margin-bottom-md">
@@ -546,7 +546,7 @@
         </div>
       </section>
       <!-- PRICING -->
-      <section class="section-price padding-l">
+      <section class="section-price padding-l" id="price">
         <div class="container center-text">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -586,7 +586,7 @@
               </li>
             </ul>
 
-            <a href="#" class="btn pad-s btn-tertiary margin-top-md"
+            <a href="#cta" class="btn pad-s btn-tertiary margin-top-md"
               >Start eating well</a
             >
           </div>
@@ -624,7 +624,7 @@
             </ul>
 
             <a
-              href="#"
+              href="#cta"
               class="btn btn-primary mr-sm pad-m margin-top-l preferred-btn"
               >Start eating well</a
             >
@@ -662,7 +662,7 @@
               </li>
             </ul>
 
-            <a href="#" class="btn pad-s btn-tertiary margin-top-md"
+            <a href="#cta" class="btn pad-s btn-tertiary margin-top-md"
               >Start eating well</a
             >
           </div>
@@ -727,7 +727,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container padding-l">
           <div class="cta-bg">
             <div class="cta-text-box">
@@ -810,7 +810,8 @@
           </a>
 
           <p class="copyright">
-            Copyright &copy; <span class="year">2023</span> by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2023</span> by Omnifood, Inc.
+            All rights reserved.
           </p>
 
           <ul class="social-media">
@@ -916,7 +917,11 @@
         </p>
       </div>
     </div>
-
+    <!-- SMOOTH SCROLLING LIBRARY TO SUPPORT SAFARI-->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <!-- SWIPER JS-->
     <script defer src="js/swiper-bundle.min.js"></script>
     <!-- JAVASCRIPT -->

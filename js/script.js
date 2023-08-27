@@ -7,6 +7,28 @@ navBtnEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open"); //Add or remove at the same time (toggle)
 });
 
+/* SET SMOOTH SCROLLING ANIMATION ON ALL BROWSER */
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const href = link.getAttribute("href");
+
+    //Scrolling to the top (href = #)
+    if (href == "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    // Scroll to other sections
+    if (href != "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
 /* CAROUSEL */
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
