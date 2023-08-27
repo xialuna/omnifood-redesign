@@ -39,11 +39,12 @@ const heroSectionEl = document.querySelector(".hero-section");
 const observe = new IntersectionObserver(
   function (entries) {
     const entry = entries[0];
-
+    /*add the "sticky" class list in body*/
     if (!entry.isIntersecting) {
       document.body.classList.add("sticky");
     }
 
+    /*remove "sticky" class list in body*/
     if (entry.isIntersecting === true) {
       document.body.classList.remove("sticky");
     }
@@ -54,7 +55,6 @@ const observe = new IntersectionObserver(
     rootMargin: "-115px",
   }
 );
-
 observe.observe(heroSectionEl);
 
 /* CAROUSEL */
