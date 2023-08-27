@@ -27,6 +27,10 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    // Close mobile navigation when you click
+    if (link.classList.contains("nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
 /* CAROUSEL */
