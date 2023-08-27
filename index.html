@@ -77,11 +77,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="assets\hero-img.png"
-              class="hero-img"
-              alt="Bowl of noodles"
-            />
+            <picture>
+              <source srcset="assets\hero-img.webp" type="image/webp" />
+              <source srcset="assets\hero-img.png" type="image/webp" />
+              <img
+                src="assets\hero-img.png"
+                class="hero-img"
+                alt="Bowl of noodles"
+              />
+            </picture>
 
             <!-- FLOATING RATINGS ON TOP OF IMAGE -->
             <div class="rating-box">
