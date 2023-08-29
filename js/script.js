@@ -97,22 +97,43 @@ const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 /* ANIMATION*/
-const images = document.querySelectorAll(".app-img");
-const observerOptions = {
+
+// For app demo image
+const appImage = document.querySelectorAll(".app-img");
+const observerOptions1 = {
   root: null,
   rootMargin: "-10px",
-  threshold: 0.5, // Adjust as needed
+  threshold: 0.5,
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observe1 = new IntersectionObserver((entries, observe1) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
+      entry.target.classList.add("show-app-img");
+      observe1.unobserve(entry.target);
     }
   });
-}, observerOptions);
+}, observerOptions1);
 
-images.forEach((image) => {
-  observer.observe(image);
+appImage.forEach((image) => {
+  observe1.observe(image);
 });
+
+//For slide left animation
+const slideLeftEl = document.querySelector(".slideLeft");
+
+function handleSlideLeft(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) slideLeftEl.classList.add("slideLeft-show");
+  });
+}
+
+const slideLeftObserver = new IntersectionObserver(handleSlideLeft, {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+});
+
+slideLeftObserver.observe(slideLeftEl);
+
+// For slide up animation
