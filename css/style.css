@@ -255,7 +255,7 @@
 .app-img {
   width: 40%;
   transform: scale(0.8);
-  transition: opacity 0.5s ease-in-out, transform 1s ease;
+  transition: all 2s ease;
   opacity: 0;
 }
 
