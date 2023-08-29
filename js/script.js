@@ -130,10 +130,26 @@ function handleSlideLeft(entries, observer) {
 
 const slideLeftObserver = new IntersectionObserver(handleSlideLeft, {
   root: null,
-  rootMargin: "0px",
+  rootMargin: "20px",
   threshold: 0.5,
 });
 
 slideLeftObserver.observe(slideLeftEl);
 
 // For slide up animation
+
+const slideUpEl = document.querySelector(".slideUp");
+
+function handleSlideUp(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) slideUpEl.classList.add("slideUp-show");
+  });
+}
+
+const slideUpObserver = new IntersectionObserver(handleSlideUp, {
+  root: null,
+  rootMargin: "40px",
+  threshold: 0,
+});
+
+slideUpObserver.observe(slideUpEl);

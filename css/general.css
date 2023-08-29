@@ -240,6 +240,17 @@ body {
   transform: translateX(0);
 }
 
+.slideUp {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 0.7s ease-in;
+}
+
+.slideUp-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* HELPER/SETTINGS CLASSES */
 
 .margin-right-sm {
