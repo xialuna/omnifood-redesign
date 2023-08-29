@@ -225,6 +225,11 @@ body {
   transition: all 0.3s;
 }
 
+.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* HELPER/SETTINGS CLASSES */
 
 .margin-right-sm {

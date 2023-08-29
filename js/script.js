@@ -1,5 +1,4 @@
 /* MOBILE NAVIGATION */
-
 const navBtnEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
@@ -96,3 +95,24 @@ toggleButtons.forEach((button) => {
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+/* ANIMATION*/
+const images = document.querySelectorAll(".app-img");
+const observerOptions = {
+  root: null,
+  rootMargin: "-10px",
+  threshold: 0.5, // Adjust as needed
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+images.forEach((image) => {
+  observer.observe(image);
+});
