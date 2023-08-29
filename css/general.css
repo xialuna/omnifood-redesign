@@ -242,8 +242,8 @@ body {
 
 .slideUp {
   opacity: 0;
-  transform: translateY(30%);
-  transition: all 0.7s ease-in;
+  transform: translateY(20%);
+  transition: all 0.5s ease-in;
 }
 
 .slideUp-show {
