@@ -14,7 +14,7 @@ allLinks.forEach(function (link) {
     const href = link.getAttribute("href");
 
     // Check if the link's href starts with "http" or is not a hash "#"
-    if (!href.startsWith("http") && href !== "#") {
+    if (!href.startsWith("http")) {
       event.preventDefault();
 
       // Scrolling to the top (href = #)
@@ -25,7 +25,7 @@ allLinks.forEach(function (link) {
         });
       }
       // Scroll to other sections
-      else if (href.startsWith("#")) {
+      else if (href != "#" && href.startsWith("#")) {
         const sectionEl = document.querySelector(href);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
