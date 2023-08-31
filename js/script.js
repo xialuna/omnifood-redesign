@@ -11,25 +11,30 @@ const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (event) {
-    event.preventDefault();
     const href = link.getAttribute("href");
 
-    //Scrolling to the top (href = #)
-    if (href === "#") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-    // Scroll to other sections
-    if (href != "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
+    // Check if the link's href starts with "http" or is not a hash "#"
+    if (!href.startsWith("http") && href !== "#") {
+      event.preventDefault();
 
-    // Close mobile navigation when you click
-    if (link.classList.contains("nav-link"))
-      headerEl.classList.toggle("nav-open");
+      // Scrolling to the top (href = #)
+      if (href === "#") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+      // Scroll to other sections
+      else if (href.startsWith("#")) {
+        const sectionEl = document.querySelector(href);
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Close mobile navigation when you click
+      if (link.classList.contains("nav-link")) {
+        headerEl.classList.toggle("nav-open");
+      }
+    }
   });
 });
 
